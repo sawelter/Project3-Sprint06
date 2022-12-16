@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import Header from "./Components/Header/Header.js"
-import Footer from "./Components/Footer/Footer.js"
-import PhotoContainer from "./Components/PhotoContainer/PhotoContainer.js"
+import Header from "./components/Header/Header.js"
+import Footer from "./components/Footer/Footer.js"
+import PhotoContainer from "./components/PhotoContainer/PhotoContainer.js"
 
 function App() {
   return (
