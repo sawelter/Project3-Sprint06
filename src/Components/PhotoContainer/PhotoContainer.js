@@ -9,7 +9,6 @@ import './PhotoContainer.css';
 
 function PhotoContainer(props) {
     const [imgURL, setImgURL] = useState("");
-    setImgURL("https://apod.nasa.gov/apod/image/2212/MarsTrailsSMALL.jpg");
 
     // const [photoInfo, setPhotoInfo] = useState(null);
 
