@@ -1,13 +1,8 @@
 
 
 const Caption = props => {
-    // Takes in the Photo object from the API as a props
+    // Takes in the Photo object from the API as a prop
     const { photoInfo } = props;
-    // Returns a string that has 
-        // photo.title
-        // photo.explanation
-        // photo.date
-        // photo.copyright
 
     return(
         <div>

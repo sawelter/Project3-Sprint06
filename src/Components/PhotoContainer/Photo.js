@@ -7,10 +7,6 @@ const  Photo = props => {
     // Takes in Photo URL as prop
     // const [photo, setPhoto] = useState(""); // url??? 
 
-    useEffect(() => {
-
-    }, [])
-
     // setPhoto("https://apod.nasa.gov/apod/image/1001/NBMoon_StefanoDeRosa_sm.jpg");
 
     // returns an img

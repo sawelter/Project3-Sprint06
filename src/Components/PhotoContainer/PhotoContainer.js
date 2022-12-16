@@ -7,27 +7,30 @@ import './PhotoContainer.css';
 
 
 
-function PhotoContainer() {
-    const dates = ["2020-01-01", "2012-03-14", "2009-10-19"];
+function PhotoContainer(props) {
     const [imgURL, setImgURL] = useState("");
-    const [photoInfo, setPhotoInfo] = useState(null);
+    setImgURL("https://apod.nasa.gov/apod/image/2212/MarsTrailsSMALL.jpg");
 
-    useEffect(() => {
-        axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
-            .then(res => {
-                console.log(res.data.url);
-                setImgURL(res.data.url);
-                setPhotoInfo(res.data);
-            })
-            .catch(err => console.error(err))
-    }, [])
+    // const [photoInfo, setPhotoInfo] = useState(null);
 
-    
-    return (
+    // let dateInput = document.querySelector(".date-input").value;
+    // console.log("Date input: " + dateInput)
+
+
+// FIX THIS ONCE I HAVE MY LIMIT RESET.
+    // useEffect(() => {
+    //     axios.get("https://api.nasa.gov/planetary/apod?date=2020-01-01")
+    //         .then(res => {
+    //             setImgURL(res.data.url);
+    //             setPhotoInfo(res.data);
+    //         })
+    //         .catch(err => console.error(err))
+    // }, [])
+    return  (
         <div>
-            <h1>PHOTO CONTAINER:</h1>
-            <Photo photo={imgURL}/>
-            <Caption photoInfo={photoInfo}/>
+            {/* <input class="date-input"></input> */}
+            <Photo photo={"https://apod.nasa.gov/apod/image/2212/MarsTrailsSMALL.jpg"}/>
+            {/* <Caption photoInfo={photoInfo}/> */}
         </div>
     )
 }
