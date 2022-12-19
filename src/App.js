@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import NasaPhoto from "./Components.NasaPhoto.js"
+import NasaPhoto from "./Components/NasaPhoto.js"
 
 const API_KEY = "1TfVcwMbYqKXt3EPA3E5bsBepCmNc9Xe40T4k0oL";
 
