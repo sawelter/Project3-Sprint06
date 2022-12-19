@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+.nasa-photo {
+  display: flex;
+  flex-direction: row;
+}
+.nasa-photo img {
+  width: 47%;
+}
+.nasa-photo .nasa-photo-text {
+  width: 47%;
+}
+
+.nasa-photo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+.nasa-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.nasa-photo-wrapper p {
+  width: 60%;
+}
+
+img {
+  width: 60%;
+  margin: 2%;
+}
+
+h1 {
+  margin: 2%;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+
+}
+
+p {
+  text-align:left;
+  margin: 2%;
+  line-height: 1.3;
+}

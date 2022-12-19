@@ -9,19 +9,20 @@ function App() {
 
   const [data, setData] = useState();
 
+  // get with date: https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${date}
+
   useEffect(() => {
     axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
       .then(results => {
+        console.log(results);
         setData(results.data);
       })
       .catch(err => console.error(err));
   }, [])
-  
-
 
   return (
     <div className="App">
-      <NasaPhoto photo={data}/>
+      {data && <NasaPhoto photo={data}/>}
     </div>
   );
 }
