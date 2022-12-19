@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import Header from "./components/Header/Header.js"
-import Footer from "./components/Footer/Footer.js"
-import PhotoContainer from "./components/PhotoContainer/PhotoContainer.js"
+import axios from "axios";
+import NasaPhoto from "./Components.NasaPhoto.js"
+
+const API_KEY = "1TfVcwMbYqKXt3EPA3E5bsBepCmNc9Xe40T4k0oL";
 
 function App() {
+
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
+      .then(results => {
+        setData(results.data);
+      })
+      .catch(err => console.error(err));
+  }, [])
+  
+
+
   return (
     <div className="App">
-      <Header />
-      <PhotoContainer />
-      <Footer />
+      <NasaPhoto photo={data}/>
     </div>
   );
 }
