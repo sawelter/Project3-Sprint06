@@ -10,7 +10,7 @@ const StyledPhotoContent = styled.div`
     img {
         height: 70vh;
         margin: 0 15px;
-        max-width: 50%;
+        // max-width: 50%;
     }
 
     .text-wrapper {
