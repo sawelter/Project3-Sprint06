@@ -1,0 +1,6 @@
+Potential Things To Fix:
+1. @media adjust max-size (responsive design)
+    -- problems with: header, h1
+    -- adjust so photo and text are column instead of row
+2. make photo be the same size every time, but cropped to fit 
+3. 

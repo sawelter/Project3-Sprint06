@@ -4,8 +4,9 @@ import React from "react";
 const headerBackgroundURL = "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80";
 
 const HeaderStyling = styled.div`
-    max-widht:100%;
-    height: 20vh;
+    max-width:100%;
+    // height: 20vh;
+    padding: 40px 0;
     background-image: url(${headerBackgroundURL});
     background-color: black;
     display: flex;
@@ -21,9 +22,24 @@ const HeaderStyling = styled.div`
         font-weight: 600;
     }
 
-`;
+    .input-date {
+        margin-top: 20px;
 
-const InputStyling = styled.div`
+        button {
+            margin: 0 5px;
+        }
+    }
+
+    @media(max-width: 850px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+    @media(max-width: 600) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
 
 `;
 
@@ -38,7 +54,6 @@ const Header = (props) => {
 
     return (
         <HeaderStyling>
-            
             <h1>NASA Photo of the Day</h1>
             <div className="input-date">
                 <input placeholder="Enter date in 'YYYY-MM-DD' format" />

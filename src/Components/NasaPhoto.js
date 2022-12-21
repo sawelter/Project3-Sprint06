@@ -7,13 +7,16 @@ const StyledPhotoContent = styled.div`
     margin: 50px 10px;
     padding:20px;
 
+
+    border 1px solid red;
     * {
-        // border 1px solid red;
+        border 1px solid red;
     }
 
     img {
         height: 70vh;
         margin: 0 15px;
+        max-width: 50%;
     }
 
     .text-wrapper {
@@ -51,6 +54,24 @@ const StyledPhotoContent = styled.div`
         }
         ::-webkit-scrollbar-thumb:hover {
             background: black;
+        }
+    }
+
+    @media(max-width: 850px) {
+        flex-direction: column;
+        margin-top: 20px;
+
+        .text-wrapper {
+            height: auto;
+            max-width: 100%;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            width: 100%;
+            margin: 0;
         }
     }
 `;
