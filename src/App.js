@@ -48,8 +48,7 @@ function App() {
 
   return (
     <StyledApp className="App">
-      <input placeholder="Enter date in 'YYYY-MM-DD' format" />
-      <button onClick={saveData}>Update</button>
+      <Header date={date} setDate={setDate} />
       {data && <NasaPhoto photo={data}/>}
     </StyledApp>
   );
