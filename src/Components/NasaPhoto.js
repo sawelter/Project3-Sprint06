@@ -7,12 +7,6 @@ const StyledPhotoContent = styled.div`
     margin: 50px 10px;
     padding:20px;
 
-
-    border 1px solid red;
-    * {
-        border 1px solid red;
-    }
-
     img {
         height: 70vh;
         margin: 0 15px;
