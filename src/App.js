@@ -7,9 +7,6 @@ import NasaPhoto from "./Components/NasaPhoto.js"
 import Header from "./Components/Header.js"
 
 
-const API_KEY = "1TfVcwMbYqKXt3EPA3E5bsBepCmNc9Xe40T4k0oL";
-
-
 // Returns today's date as 'YYYY-MM-DD' format string
 function today() {
   var today = new Date();
